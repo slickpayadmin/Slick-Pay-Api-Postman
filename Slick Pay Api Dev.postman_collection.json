@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "debcbb24-2984-43f5-a56e-73467cd81713",
+		"name": "Slick Pay Api Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28460790",
+		"_collection_link": "https://gold-sunset-654427.postman.co/workspace/Slick-Pay-Algeria~7fe460c6-eb82-451a-8d61-9dc394e5298c/collection/28460790-debcbb24-2984-43f5-a56e-73467cd81713?action=share&source=collection_link&creator=28460790"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Get Accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/accounts",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\" : 1000,\r\n    \"fees\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/accounts",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Get Concts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "57|74wHgIsMKIGomdIEgyBW5bSZ5Gw3vFYcfjPTF3wL",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/contacts",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "57|74wHgIsMKIGomdIEgyBW5bSZ5Gw3vFYcfjPTF3wL",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"title\" : \"Lorem Ipsum\",\r\n        \"lastname\": \"Lorem\",\r\n        \"firstname\": \"Ipsum\",\r\n        \"email\": \"lorem@ipsum.com\",\r\n        \"address\": \"Lorem Ipsum Address\",\r\n        \"rib\": \"00300200100400578945\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/contacts",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Get Invoices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/invoices",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "57|74wHgIsMKIGomdIEgyBW5bSZ5Gw3vFYcfjPTF3wL",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 300,\r\n    \"firstname\": \"user\",\r\n    \"lastname\": \"user\",\r\n    \"phone\": \"0555555555\",\r\n    \"email\": \"useruser5@gmail.com\",\r\n    \"address\": \"shou124\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Seller product\",\r\n            \"price\": 5000,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/invoices",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"invoices"
+							],
+							"query": [
+								{
+									"key": "firstname",
+									"value": "ahmed",
+									"disabled": true
+								},
+								{
+									"key": "lastname",
+									"value": "naoum",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "0541278541",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "wdfsoij@sdosd.com",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "ahdi254vhjd",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Invoice",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"firstname\": \"Tes\",\r\n    \"lastname\" : \"last\",\r\n    \"phone\" : \"0777444555\",\r\n    \"email\" : \"a@a.ds\",\r\n    \"address\" : \"blida\",\r\n    \"url\": \"https://my-website.com/thank-you-page\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Seller product\",\r\n            \"price\": 5000,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/invoices/1723",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"invoices",
+								"1723"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transfer",
+			"item": [
+				{
+					"name": "Get transfers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/transfers",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"transfers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create transfers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \r\n    \"account\": \"80412ff4-f082-4d4d-9cf6-7bfacc85feea\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/transfers",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"transfers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail transfers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "57|74wHgIsMKIGomdIEgyBW5bSZ5Gw3vFYcfjPTF3wL",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"firstname\": \"Tes\",\r\n    \"lastname\" : \"last\",\r\n    \"phone\" : \"0777444555\",\r\n    \"email\" : \"a@a.ds\",\r\n    \"address\" : \"blida\",\r\n    \"url\": \"https://my-website.com/thank-you-page\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Seller product\",\r\n            \"price\": 5000,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/transfers/1723",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"transfers",
+								"1723"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aggregations",
+			"item": [
+				{
+					"name": "Get aggregations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/aggregations",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"aggregations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create aggregations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"url\": \"https://my-website.com/thank-you-page\",\r\n        \"type\": \"percentage\",\r\n        \"total\": 10000,\r\n        \"contacts\": [\r\n            {\r\n                \"uuid\": \"864efcd3-9fef-4da5-67ec-bc28fd7e719b\",\r\n                \"amount\": 50\r\n            },\r\n            {\r\n                \"uuid\": \"f23bde3f-aac9-4dfc-7e06-5bf02e7f5967\",\r\n                \"amount\": 50\r\n            }\r\n        ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/aggregations",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"aggregations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Invoice Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"firstname\": \"Tes\",\r\n    \"lastname\" : \"last\",\r\n    \"phone\" : \"0777444555\",\r\n    \"email\" : \"a@a.ds\",\r\n    \"address\" : \"blida\",\r\n    \"url\": \"https://my-website.com/thank-you-page\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Seller product\",\r\n            \"price\": 5000,\r\n            \"quantity\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users/invoices",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users",
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "48|e38u499dLrh94cPipLkranYXjHdUjWGsbEb9o2ud",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://devapi.slick-pay.com/api/v2/users",
+							"protocol": "https",
+							"host": [
+								"devapi",
+								"slick-pay",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Tokan test",
+			"value": "57|74wHgIsMKIGomdIEgyBW5bSZ5Gw3vFYcfjPTF3wL"
+		}
+	]
+}
